@@ -2,9 +2,9 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class calculation {
-
-	 JFrame frame;
+public class calculation 
+{
+     JFrame frame;
      JTextField t1,t2,t3;
 	
 	public calculation() 
@@ -117,22 +117,14 @@ public class calculation {
 		});
 		reset.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 20));
 		reset.setBounds(499, 321, 180, 44);
-		frame.getContentPane().add(reset);
-		
-		
+		frame.getContentPane().add(reset);	
 	}
 	
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					calculation window = new calculation();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
+	public static void main(String[] args) 
+	{
+		calculation window = new calculation();
+		window.frame.setVisible(true);
+				
 	}
 
 }
